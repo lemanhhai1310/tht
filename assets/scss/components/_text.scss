@@ -1,0 +1,31 @@
+@mixin line-clamp($i){
+  display: -webkit-box;
+  -webkit-line-clamp: #{$i};
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+$j: 1,2,3,4,5;
+@each $i in $j {
+  .line-clamp-#{$i}{
+    @include line-clamp($i);
+  }
+}
+
+$colors: (
+        '000': #000,
+        'FFF': #FFF,
+        '0054A5': #0054A5,
+        '18364D': #18364D,
+        '3161C2': #3161C2,
+        '161616': #161616,
+        '3D3D3D': #3D3D3D,
+        '2BBEF9': #2BBEF9,
+        '656565': #656565,
+        'FF853F': #FF853F,
+
+);
+@each $name,$value in $colors {
+  .text-#{$name} {
+    color: rgba($value, 1);
+  }
+}

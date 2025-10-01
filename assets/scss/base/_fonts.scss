@@ -1,0 +1,9 @@
+$font-weight: 100,200,300,400,500,600,700,800,900;
+@each $weight in $font-weight {
+  .exo-2-#{$weight} {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}

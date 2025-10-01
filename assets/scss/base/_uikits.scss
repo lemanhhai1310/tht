@@ -1,0 +1,20 @@
+.uk{
+  &-child{
+    &-width{
+      &-1{
+        &-8{
+          >*{
+            width: calc(100% / 8);
+          }
+          &\@l{
+            >*{
+              @include media-breakpoint-up('l') {
+                width: calc(100% / 8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

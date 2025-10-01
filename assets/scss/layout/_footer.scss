@@ -1,0 +1,13 @@
+.footer {
+  &__bg{
+    opacity: 0.7;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, #63BEF0 100%), var(--pathImage) lightgray -0.785px 0px / 100.057% 209.961% no-repeat;
+    mix-blend-mode: multiply;
+  }
+  &__card{
+    padding: 6px 10px 10px 10px;
+  }
+  &__bottom{
+    border-top: 1px solid #CCF6FF;
+  }
+}
