@@ -1,4 +1,67 @@
 .home{
+  &__tabchi{
+    &__tab{
+      >*{
+        >a{
+          @extend .text-656565;
+          @extend .fz-18;
+          @extend .exo-2-500;
+          padding: 8px 14px;
+        }
+        &.uk-active{
+          >a{
+            border-radius: 10px 10px 0 0;
+            background: var(--Primary-1, #6BCCE2);
+            @extend .text-18364D;
+            border-color: #6BCCE2;
+          }
+        }
+      }
+    }
+    &__header{
+      $x:10px;
+      padding-bottom: $x;
+      padding-top: $x;
+      background: var(--Primary-2, #2BBEF9);
+    }
+    &__table{
+      border-radius: 0 0 5px 5px;
+      background: var(--Neutral-5, #EDEDED);
+      >*{
+        &:not(:first-child){
+          >tr{
+            border-bottom: 10px solid #e5e5e5;
+            border-left: 5px solid #e5e5e5;
+            border-right: 5px solid #e5e5e5;
+            &:not(:first-child){
+
+            }
+          }
+        }
+      }
+      tr{
+        th{
+          text-transform: inherit;
+          @extend .fz-15;
+          @extend .text-484554;
+          @extend .exo-2-700;
+          white-space: nowrap;
+        }
+        td{
+          @extend .text-484554;
+          @extend .fz-14;
+          &:nth-child(1),&:nth-child(3){
+            @extend .exo-2-600;
+          }
+        }
+      }
+      tbody{
+        tr{
+          background-color: #fff;
+        }
+      }
+    }
+  }
   &__section{
     background: #F5FEFF;
     box-shadow: 0 4px 10.9px 0 rgba(0, 0, 0, 0.11);

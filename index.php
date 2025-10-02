@@ -1,6 +1,22 @@
 <?php
 $data["title"] = "Home";
 require "partials/header.php"; ?>
+<div class="uk-section-small uk-padding-remove-bottom">
+    <div class="uk-container">
+        <h2 class="fz-28 exo-2-700 text-2BBEF9 uk-margin-remove">Tạp chí đã xuất bản</h2>
+        <ul class="home__tabchi__tab item-34px" uk-tab>
+            <li class="uk-active"><a href="#">2025</a></li>
+            <li><a href="#">2024</a></li>
+            <li><a href="#">2023</a></li>
+            <li><a href="#">2022</a></li>
+            <li><a href="#">2021</a></li>
+            <li><a href="#">2020</a></li>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            <li><a href="#">2017</a></li>
+        </ul>
+    </div>
+</div>
 <div class="uk-section-small home__section">
     <div class="uk-container">
         <div class="" uk-slider>
@@ -62,12 +78,104 @@ require "partials/header.php"; ?>
 
         </div>
         <hr class="uk-hr divider">
-        <div uk-grid>
+        <div class="" uk-grid>
             <div class="uk-width-1-3@l">
+                <div class="my-class" uk-slider="center: false">
 
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-slider-container-offset">
+                            <div class="uk-slider-items uk-child-width-1-1 uk-grid-small uk-grid-58-l" uk-grid>
+                                <?php for ($i = 0; $i < 4; $i++) { ?>
+                                    <div>
+                                        <div class="uk-cover-container uk-box-shadow-small">
+                                            <img uk-img data-src="https://picsum.photos/274/373?random=<?= $i ?>" alt="" uk-cover="">
+                                            <canvas width="373" height="507"></canvas>
+                                        </div>
+                                        <div class="uk-text-center item-22px exo-2-600 text-18364D lh-142">Khoa học tự nhiên - Số 07/2025</div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small home__slidernav-icon" href uk-slidenav-previous uk-slider-item="previous">
+                                <div class="home__slidernav uk-border-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                                        <path d="M9.48196 5.35236H2.12339L4.21482 3.15636C4.38196 2.98086 4.38196 2.69286 4.21482 2.51736C4.13475 2.4331 4.02604 2.38574 3.91267 2.38574C3.79931 2.38574 3.6906 2.4331 3.61053 2.51736L0.786246 5.48286C0.619103 5.65836 0.619103 5.94186 0.786246 6.11736L3.61053 9.08286C3.77767 9.25836 4.04767 9.25836 4.21482 9.08286C4.38196 8.90736 4.38196 8.62386 4.21482 8.44836L2.12339 6.25236H9.48196C9.71767 6.25236 9.91053 6.04986 9.91053 5.80236C9.91053 5.55486 9.71767 5.35236 9.48196 5.35236Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a class="uk-position-center-right uk-position-small home__slidernav-icon" href uk-slidenav-next uk-slider-item="next">
+                                <div class="home__slidernav uk-border-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                                        <path d="M0.517796 5.35236H7.87637L5.78494 3.15636C5.6178 2.98086 5.6178 2.69286 5.78494 2.51736C5.86501 2.4331 5.97372 2.38574 6.08708 2.38574C6.20045 2.38574 6.30915 2.4331 6.38922 2.51736L9.21351 5.48286C9.38065 5.65836 9.38065 5.94186 9.21351 6.11736L6.38922 9.08286C6.22208 9.25836 5.95208 9.25836 5.78494 9.08286C5.6178 8.90736 5.6178 8.62386 5.78494 8.44836L7.87637 6.25236H0.517796C0.282082 6.25236 0.0892239 6.04986 0.0892239 5.80236C0.0892239 5.55486 0.282082 5.35236 0.517796 5.35236Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small home__slidernav-icon" href uk-slidenav-previous uk-slider-item="previous">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" viewBox="0 0 18 35" fill="none">
+                                        <path d="M16 2L2.63261 15.7033C2.27359 16.0714 2.25217 16.6517 2.58309 17.0452L16 33" stroke="#868686" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a class="uk-position-center-right-out uk-position-small home__slidernav-icon" href uk-slidenav-next uk-slider-item="next">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="35" viewBox="0 0 18 35" fill="none">
+                                        <path d="M2 2L15.3674 15.7033C15.7264 16.0714 15.7478 16.6517 15.4169 17.0452L2 33" stroke="#868686" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden"></ul>
+
+                </div>
             </div>
             <div class="uk-width-expand">
-
+                <div class="home__tabchi__header uk-padding-small uk-light">
+                    <div class="uk-child-width-auto uk-flex-between" uk-grid>
+                        <div>
+                            <div class="exo-2-700 text-FFF">Số 07 Năm 2025</div>
+                        </div>
+                        <div>
+                            <div class="exo-2-700 text-FFF">Số trang: 176</div>
+                        </div>
+                        <div>
+                            <div class="exo-2-700 text-FFF">Số bài: 12</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-overflow-auto">
+                    <table class="home__tabchi__table uk-table uk-table-hover uk-table-divider">
+                        <thead>
+                        <tr>
+                            <th>TT</th>
+                            <th>Tên tác giả</th>
+                            <th>Tên bài</th>
+                            <th>Chuyên ngành - Lĩnh vực</th>
+                            <th>Trang</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php for ($i = 0; $i < 4; $i++) { ?>
+                        <tr>
+                            <td><?= $i+1 ?></td>
+                            <td>Vũ Thị Yến, Trần Đức Hiệp, Phạm Thế Vũ, Phạm Trung Hiếu</td>
+                            <td>Bộ điều khiển bền vững thích nghi nơ ron trên cơ sở của công nghệ cuốn chiếu cho tay máy</td>
+                            <td>Khoa học công nghệ</td>
+                            <td>3 - 8</td>
+                        </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

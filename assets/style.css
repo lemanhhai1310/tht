@@ -26,21 +26,21 @@
   font-style: normal;
 }
 
-.exo-2-500 {
+.exo-2-500, .home__tabchi__tab > * > a {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-.exo-2-600 {
+.exo-2-600, .home__tabchi__table tr td:nth-child(1), .home__tabchi__table tr td:nth-child(3) {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
 
-.exo-2-700 {
+.exo-2-700, .home__tabchi__table tr th {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -843,6 +843,10 @@
   line-height: 1.54545;
 }
 
+.lh-160 {
+  line-height: 1.6;
+}
+
 .lh-171 {
   line-height: 1.71429;
 }
@@ -894,7 +898,7 @@
   color: #0054a5;
 }
 
-.text-18364D {
+.text-18364D, .home__tabchi__tab > *.uk-active > a {
   color: #18364d;
 }
 
@@ -914,12 +918,16 @@
   color: #2bbef9;
 }
 
-.text-656565 {
+.text-656565, .home__tabchi__tab > * > a {
   color: #656565;
 }
 
 .text-FF853F {
   color: #ff853f;
+}
+
+.text-484554, .home__tabchi__table tr td, .home__tabchi__table tr th {
+  color: #484554;
 }
 
 .width-197px {
@@ -944,11 +952,11 @@
   font-size: 0.8125rem;
 }
 
-.fz-14 {
+.fz-14, .home__tabchi__table tr td {
   font-size: 0.875rem;
 }
 
-.fz-15 {
+.fz-15, .home__tabchi__table tr th {
   font-size: 0.9375rem;
 }
 
@@ -956,7 +964,7 @@
   font-size: 1rem;
 }
 
-.fz-18 {
+.fz-18, .home__tabchi__tab > * > a {
   font-size: 1.125rem;
 }
 
@@ -1329,6 +1337,35 @@
   border-top: 1px solid #CCF6FF;
 }
 
+.home__tabchi__tab > * > a {
+  padding: 8px 14px;
+}
+.home__tabchi__tab > *.uk-active > a {
+  border-radius: 10px 10px 0 0;
+  background: var(--Primary-1, #6BCCE2);
+  border-color: #6BCCE2;
+}
+.home__tabchi__header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: var(--Primary-2, #2BBEF9);
+}
+.home__tabchi__table {
+  border-radius: 0 0 5px 5px;
+  background: var(--Neutral-5, #EDEDED);
+}
+.home__tabchi__table > *:not(:first-child) > tr {
+  border-bottom: 10px solid #e5e5e5;
+  border-left: 5px solid #e5e5e5;
+  border-right: 5px solid #e5e5e5;
+}
+.home__tabchi__table tr th {
+  text-transform: inherit;
+  white-space: nowrap;
+}
+.home__tabchi__table tbody tr {
+  background-color: #fff;
+}
 .home__section {
   background: #F5FEFF;
   -webkit-box-shadow: 0 4px 10.9px 0 rgba(0, 0, 0, 0.11);
