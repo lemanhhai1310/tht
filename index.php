@@ -1,7 +1,53 @@
 <?php
 $data["title"] = "Home";
 require "partials/header.php"; ?>
-<div class="uk-section-xsmall">
+<div class="uk-container">
+    <div class="uk-grid-small uk-grid-33-l" uk-grid>
+        <div class="uk-width-1-4@l">
+            <div class="home__subnav__card uk-card uk-card-default uk-card-body">
+                <ul class="home__nav uk-nav-default" uk-nav>
+                    <li class="uk-parent uk-open">
+                        <a href="#"><span class="uk-margin-xsmall-right" uk-icon="icon: table"></span> DANH MỤC SÁCH/TẠP CHÍ <span uk-nav-parent-icon></span></a>
+                        <ul class="home__subnav uk-nav-sub">
+                            <li><a href="#"><span class="uk-margin-xsmall-right home__subnav__icon science" uk-icon="icon: table"></span> Tạp chí Khoa học tự nhiên</a></li>
+                            <li><a href="#"><span class="uk-margin-xsmall-right home__subnav__icon education" uk-icon="icon: table"></span> Tạp chí Khoa học Giáo dục</a></li>
+                            <li><a href="#"><span class="uk-margin-xsmall-right home__subnav__icon earth" uk-icon="icon: table"></span> Tạp chí Khoa học Xã hội</a></li>
+                            <li><a href="#"><span class="uk-margin-xsmall-right home__subnav__icon knowledge" uk-icon="icon: table"></span> Sách nghiên cứu</a></li>
+                            <li><a href="#"><span class="uk-margin-xsmall-right home__subnav__icon book" uk-icon="icon: table"></span> Sách khác</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-expand">
+            <div class="uk-position-relative" uk-slideshow="animation: push;ratio: 873:379">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <div class="uk-slideshow-items">
+                        <div>
+                            <img src="assets/images/banner-11.png" alt="" uk-cover>
+                        </div>
+                        <div>
+                            <img src="assets/images/banner-11.png" alt="" uk-cover>
+                        </div>
+                        <div>
+                            <img src="assets/images/banner-11.png" alt="" uk-cover>
+                        </div>
+                    </div>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+
+                </div>
+
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-position-bottom-center uk-position-z-index"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section-small">
     <div class="uk-container">
         <div class="uk-child-width-1-2 uk-child-width-expand@l uk-text-center uk-flex-center" uk-grid uk-height-match=".my-class">
             <div>
