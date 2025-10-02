@@ -1,7 +1,7 @@
 <?php
 $data["title"] = "Home";
 require "partials/header.php"; ?>
-<div class="uk-container">
+<div class="uk-container item-12px">
     <div class="uk-grid-small uk-grid-33-l" uk-grid>
         <div class="uk-width-1-4@l">
             <div class="home__subnav__card uk-card uk-card-default uk-card-body">

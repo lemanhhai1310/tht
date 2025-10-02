@@ -33,7 +33,7 @@
   font-style: normal;
 }
 
-.exo-2-600, .home__tabchi__table tr td:nth-child(1), .home__tabchi__table tr td:nth-child(3) {
+.exo-2-600, .home__tabchi__table tr td:nth-child(1), .home__tabchi__table tr td:nth-child(3), .header__navbar .uk-navbar-nav > li > a {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -857,7 +857,7 @@
   border-radius: 8px;
 }
 
-.rounded-9px {
+.rounded-9px, .header__formSearch .uk-search-input {
   border-radius: 9px;
 }
 
@@ -1010,7 +1010,7 @@
   font-size: 0.8125rem;
 }
 
-.fz-14, .home__tabchi__table tr td {
+.fz-14, .home__tabchi__table tr td, .header__formSearch .uk-search-input {
   font-size: 0.875rem;
 }
 
@@ -1380,6 +1380,29 @@
   .item-45px:nth-child(n+2) {
     margin-top: 2.8125rem;
   }
+}
+
+.header__navbar {
+  border-radius: 16px 16px 0 0;
+}
+.header__navbar:not(.uk-navbar-transparent) {
+  background: var(--Primary-2, #2BBEF9);
+}
+.header__navbar .uk-navbar-nav > li > a {
+  min-height: 51px;
+  color: #fff;
+}
+.header__top {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(161, 163, 165, 0.45);
+}
+.header__formSearch .uk-search-input {
+  background: #F3F4F7;
+  border-color: #F3F4F7;
+}
+.header__navRight > li > a {
+  text-transform: inherit;
 }
 
 .footer__bg {

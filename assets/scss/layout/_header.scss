@@ -1,3 +1,39 @@
 .header {
-  
+  &__navbar{
+    border-radius: 16px 16px 0 0;
+    &:not(.uk-navbar-transparent){
+      background: var(--Primary-2, #2BBEF9);
+    }
+    .uk-navbar-nav{
+      >li{
+        >a{
+          min-height: 51px;
+          color: #fff;
+          @extend .exo-2-600;
+        }
+      }
+    }
+  }
+  &__top{
+    $x:10px;
+    padding-bottom: $x;
+    padding-top: $x;
+    border-bottom: 1px solid rgba(#A1A3A5,.45);
+  }
+  &__formSearch{
+    .uk-search-input{
+      @extend .fz-14;
+      background: #F3F4F7;
+      border-color: #F3F4F7;
+      @extend .rounded-9px;
+    }
+  }
+  &__navRight{
+    >li{
+      >a{
+        text-transform: inherit;
+
+      }
+    }
+  }
 }
