@@ -42,13 +42,19 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" style="text-transform: inherit;">
-                                    <img src="assets/images/flag_vi.png" alt="">
-                                    <span class="fz-13">Tiếng Việt</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M10.5832 6L7.99657 8.58666L5.4099 6C5.28535 5.87516 5.11625 5.80501 4.9399 5.80501C4.76356 5.80501 4.59446 5.87516 4.4699 6C4.2099 6.26 4.2099 6.68 4.4699 6.94L7.5299 10C7.7899 10.26 8.2099 10.26 8.4699 10L11.5299 6.94C11.7899 6.68 11.7899 6.26 11.5299 6C11.2699 5.74667 10.8432 5.74 10.5832 6Z" fill="black" fill-opacity="0.54"/>
-                                    </svg>
-                                </a>
+                                <div class="uk-inline" style="text-transform: inherit">
+                                    <div class="fz-13 uk-flex uk-flex-middle" style="gap:3px;">
+                                        <img src="assets/images/flag_vi.png" alt="">
+                                        <span>Tiếng Việt</span>
+                                        <span uk-drop-parent-icon></span>
+                                    </div>
+                                    <div class="uk-dropdown header__lang__dropnav" uk-drop="mode: click">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Tiếng Việt</a></li>
+                                            <li><a href="#">English</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>

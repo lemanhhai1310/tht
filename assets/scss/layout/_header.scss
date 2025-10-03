@@ -1,4 +1,26 @@
 .header {
+  &__lang{
+    &__dropnav{
+      $x:6px;
+      $y:20px;
+      padding: $x $y;
+      min-width: 180px;
+      .uk-nav{
+        >li{
+          >a{
+
+          }
+          &.uk-active{
+            >a{
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' aria-hidden='true'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.1' points='4,10 8,15 17,4'%3E%3C/polyline%3E%3C/svg%3E");
+              background-repeat: no-repeat;
+              background-position: right 10px center;
+            }
+          }
+        }
+      }
+    }
+  }
   &__navbar{
     border-radius: 16px 16px 0 0;
     &:not(.uk-navbar-transparent){
