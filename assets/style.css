@@ -998,6 +998,10 @@
   width: 386px;
 }
 
+.fz-9 {
+  font-size: 0.5625rem;
+}
+
 .fz-11 {
   font-size: 0.6875rem;
 }
@@ -1382,6 +1386,11 @@
   }
 }
 
+.header__cart__badge {
+  margin: var(--uk-position-margin-offset);
+  --uk-position-margin-offset: 6px;
+  background: var(--Primary-3, #EA4235);
+}
 .header__lang__dropnav {
   padding: 6px 20px;
   min-width: 180px;

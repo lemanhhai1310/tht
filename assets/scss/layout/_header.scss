@@ -1,4 +1,12 @@
 .header {
+  &__cart{
+    &__badge{
+      margin: var(--uk-position-margin-offset);
+      --uk-position-margin-offset: 6px;
+      //border-radius: 25px;
+      background: var(--Primary-3, #EA4235);
+    }
+  }
   &__lang{
     &__dropnav{
       $x:6px;
